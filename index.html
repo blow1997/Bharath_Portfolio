@@ -26,24 +26,35 @@
   <body>
     <header class="home-header">
       <div class="home-header--brand">
-        <a href="#">Bharath</a>
+        <a href="#home">Bharath</a>
       </div>
       <div class="groupBox">
         <ul class="groupList">
           <li class="listItem">
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li class="listItem">
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
           <li class="listItem">
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </header>
-    <i class="fab fa-github"></i>
-    <p>hai</p>
-    <i class="fas fa-camera"></i>
+    <div id="home"></div>
+    <div id="about"></div>
+    <div id="contact">
+      <form netlify>
+        <label>Name : </label>
+        <input type="text" name="name" /><br /><br /><br />
+        <label>email : </label>
+        <input type="email" name="email" + /><br /><br /><br />
+        <label>for : </label>
+        <textarea name="content" id="content" cols="30" rows="10"></textarea
+        ><br /><br /><br />
+        <button type="submit">submit</button>
+      </form>
+    </div>
   </body>
 </html>
