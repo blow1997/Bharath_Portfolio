@@ -28,7 +28,7 @@ font-family: 'Raleway', sans-serif;
 
 .groupBox {
   display: inline-block;
-  width: calc(100% - 125px);
+  width: calc(100% - 150px);
   text-align: right;
 }
 

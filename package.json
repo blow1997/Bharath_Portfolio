@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio site",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blow1997/Bharath_Portfolio.git"
+  },
+  "author": "Bharath.m",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blow1997/Bharath_Portfolio/issues"
+  },
+  "homepage": "https://github.com/blow1997/Bharath_Portfolio#readme"
+}
