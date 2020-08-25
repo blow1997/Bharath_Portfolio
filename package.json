@@ -4,9 +4,9 @@
   "description": "My personal portfolio site",
   "main": "index.js",
   "scripts": {
-    "babel": "node_modules/.bin/babel src/index.js -w -o dist/assets/bundle.js",
-    "webpack": "/media/bharath/linuxProj$/Portfolio/node_modules/.bin/webpack",
-    "serve": "webpack-dev-server"
+    "build": "/media/bharath/linuxProj$/Portfolio/node_modules/.bin/webpack --mode production",
+    "serve": "npm run cssbuild && webpack-dev-server --mode development",
+    "cssbuild": "postcss src/css/tailwind.css -o dist/main.css"
   },
   "repository": {
     "type": "git",
@@ -19,14 +19,18 @@
   },
   "homepage": "https://github.com/blow1997/Bharath_Portfolio#readme",
   "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.1",
+    "postcss-cli": "^7.1.1",
+    "style-loader": "^1.2.1",
+    "tailwindcss": "^1.7.2",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
-  "dependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.11.1",
-    "tailwindcss": "^1.6.2"
-  }
+  "dependencies": {}
 }

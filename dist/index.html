@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bharath | Portfolio</title>
     <!--Tailwind css CDN-->
-    <link
+    <!-- <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
-    />
+    /> -->
     <!--Favicon-->
     <link rel="android-chrome icon" href="favicon.ico" />
     <!--Fonts-->
@@ -26,10 +26,11 @@
       crossorigin="anonymous"
     ></script>
     <!--Stylesheet style.css-->
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header class="home-header">
+    <!--     <header class="home-header">
       <div class="home-header--brand">
         <a href="#home">./Bharath</a>
       </div>
@@ -70,11 +71,61 @@
       </form>
     </div>
     <footer>
-      <!-- <p>Available Here</p> -->
+
+      <p>Available Here</p> 
       <div class="social"></div>
       <p>Bharath &copy; 2020</p>
     </footer>
-    <!--Adding JS-->
-    <script src="./assets/bundle.js"></script>
+    <!--Adding Js
+    <script src="./assets/bundle.js"></script> -->
+
+    <!-- Doing Tailwind Things  ;)-->
+    <header class="h-auto flex self-center bg-blue-900">
+      <div class="w-1/6 px-2 py-2 text-2xl self-center">
+        <a href="#home" class="bg-blue-500 text-2xl">./Bharath</a>
+      </div>
+      <div class="w-5/6 mx-auto self-center bg-indigo-200">
+        <ul class="text-3xl flex self-center justify-end">
+          <li class="px-1 mx-1">
+            <a href="#home">Home</a>
+          </li>
+          <li class="px-1 mx-1">
+            <a href="#about">About</a>
+          </li>
+          <li class="px-1 mx-1">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="h-screen bg-indigo-200 flex">
+      <p
+        class="bg-indigo-700 text-center text-4xl text-indigo-100 w-2/5 top-auto"
+      >
+        Hi there
+      </p>
+      <div class="w-3/5 items-center">
+        <img
+          src="./hero.png"
+          alt="heroimage"
+          class="w-1/2 h-auto justify-center"
+        />
+      </div>
+    </section>
+    <section class="h-screen bg-teal-600 about">
+      <p class="text-6xl center">space for project and blog posts</p>
+    </section>
+    <section class="h-screen bg-blue-500 text-center p-16">
+      <form netlify>
+        <label>Name : </label>
+        <input type="text" name="name" /><br /><br /><br />
+        <label>email : </label>
+        <input type="email" name="email" + /><br /><br /><br />
+        <label>for : </label>
+        <textarea name="content" id="content" cols="30" rows="10"></textarea
+        ><br /><br /><br />
+        <button type="submit" class="bg-teal-900 p-4">submit</button>
+      </form>
+    </section>
   </body>
 </html>
