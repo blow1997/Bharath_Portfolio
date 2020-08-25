@@ -4,7 +4,7 @@
   "description": "My personal portfolio site",
   "main": "index.js",
   "scripts": {
-    "build": "/media/bharath/linuxProj$/Portfolio/node_modules/.bin/webpack --mode production",
+    "build": "webpack --mode production",
     "serve": "npm run cssbuild && webpack-dev-server --mode development",
     "cssbuild": "postcss src/css/tailwind.css -o dist/main.css"
   },
