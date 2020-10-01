@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bharath | Portfolio</title>
+    <!--Tailwind css CDN-->
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <!--Favicon-->
-    <link rel="android-chrome icon" href="./favicon_io/favicon.ico" />
+    <link rel="android-chrome icon" href="favicon.ico" />
     <!--Fonts-->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,400;1,600&display=swap"
@@ -20,13 +25,13 @@
       src="https://kit.fontawesome.com/7648eba2e7.js"
       crossorigin="anonymous"
     ></script>
-    <!--Stylesheet main.css-->
+    <!--Stylesheet style.css-->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="home-header">
       <div class="home-header--brand">
-        <a href="#home">Bharath</a>
+        <a href="#home">./Bharath</a>
       </div>
       <div class="groupBox">
         <ul class="groupList">
@@ -42,9 +47,17 @@
         </ul>
       </div>
     </header>
-    <div id="home"></div>
+    <div id="home">
+      <p class="heroIntro">
+        <br />
+        Hai i am Bharath self thought dev file
+      </p>
+      <img src="./undraw_web_developer_p3e5.png" alt="Brand" class="heroMain" />
+    </div>
     <div id="about"></div>
     <div id="contact">
+      <p>Say Hi to me!</p>
+      <br />
       <form netlify>
         <label>Name : </label>
         <input type="text" name="name" /><br /><br /><br />
@@ -56,5 +69,12 @@
         <button type="submit">submit</button>
       </form>
     </div>
+    <footer>
+      <!-- <p>Available Here</p> -->
+      <div class="social"></div>
+      <p>Bharath &copy; 2020</p>
+    </footer>
+    <!--Adding JS-->
+    <script src="./assets/bundle.js"></script>
   </body>
 </html>
